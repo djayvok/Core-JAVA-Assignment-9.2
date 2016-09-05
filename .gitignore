@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+  public static void main(String[] argv) {
+    List<String> arrayList1 = new ArrayList<String>();
+
+    arrayList1.add("Dhananjaya");
+    arrayList1.add("Dhananjaya");
+    arrayList1.add("Dhananjaya");
+    arrayList1.add("Dhan");
+    arrayList1.add("Dhan");
+    arrayList1.add("Dhan");
+
+    HashSet<String> hashSet = new HashSet<String>(arrayList1);
+
+    List<String> arrayList2 = new ArrayList<String>(hashSet);
+
+    for (Object item : arrayList2)
+      System.out.println(item);
+  }
+}
